@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suggest Apps</title>
+    <link href="css/style.css" media="all" rel="stylesheet" />
+    <script src="js/data.js"></script>
+    <script src="js/suggest-plugin.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Suggested Apps</h2>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label>Input service name: </label>
+                <input class="suggest-plugin" type="text" name="apps" value="" />
+            </div>
+        </form>
+
+        <div class="contents">
+        </div>
+    </div>
+    <script type="text/javascript">
+        var SuggestPlugin = new SuggestPlugin({
+            selector: 'input.suggest-plugin'
+        })
+    </script>
+</body>
+</html>
