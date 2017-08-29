@@ -9,21 +9,28 @@
 </head>
 <body>
     <div class="container">
-        <h2>Suggested Apps</h2>
-        <form class="form-horizontal" role="form">
+        <h2 class="title">Suggested Apps</h2>
+        <section class="section">
             <div class="form-group">
-                <label>Input service name: </label>
-                <input class="suggest-plugin" type="text" name="apps" value="" />
+                <h4>Suggest App 1: </h4>
+                <input class="suggest-plugin" type="text" name="apps_1" value="" />
             </div>
-        </form>
+        </section>
 
-        <div class="contents">
-        </div>
+        <section class="section">
+            <div class="form-group">
+                <h4>Suggest App 2: </h4>
+                <input class="suggest-plugin" type="text" name="apps_2" value="" />
+            </div>
+        </section>
+
+
     </div>
-    <script type="text/javascript">
+    <script>
         var SuggestPlugin = new SuggestPlugin({
-            selector: 'input.suggest-plugin'
-        })
+            selector    : 'input.suggest-plugin',
+            source      : APP_DATA
+        });
     </script>
 </body>
 </html>
