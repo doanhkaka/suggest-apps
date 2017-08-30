@@ -1,3 +1,9 @@
+/*
+    Javascript Suggest Plugin
+    Copyright (c) 2017 Cris Lee / leecris241@gmail.com
+    Github: https://github.com/leecris/suggest-apps
+    License: http://www.opensource.org/licenses/mit-license.php
+ */
 (function(root, factory) {
     if (typeof define === 'function' && define.amd) {
         define(factory);
